@@ -1,0 +1,27 @@
+import pyttsx3
+#import pygame as pg
+from time import sleep
+import speech_recognition as speech
+import webbrowser
+import wikipedia
+#import pyaudio
+import datetime
+
+engine = pyttsx3.init()
+age = datetime.datetime.now()
+sleep(0.25)
+print(wikipedia.search("salman khan"))
+webbrowser.open("https://www.worldometers.info/coronavirus/")
+print(age)
+recognizer = speech.Microphone()
+#p = pyaudio.PyAudio()
+#pg.init()
+
+
+"the code to add"
+import pyttsx3
+engine = pyttsx3.init()
+user_name = input ("please enter your username and surname")
+user_pass = input ("please enter your password but the password should contain 7 charecter 1 capital or small leter")
+engine.say(user_name)
+engine.runAndWait()
